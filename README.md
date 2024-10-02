@@ -19,6 +19,15 @@ Para ejecutar el proyecto, utiliza el siguiente comando de Maven:
 mvn spring-boot:run
 ```
 
+## Ejecución del Proyecto con Docker 🐳
+
+Para ejecutar el proyecto, utiliza los siguiente comandos de Docker:
+
+```sh
+docker build -t discovery-service .
+docker run --name discovery-service --network all_connected -d -p 8761:8761 discovery-service
+```
+
 ## Autor 🧑🏻‍💻
 
 - [@alejandronoss1017](https://github.com/alejandronoss1017)
